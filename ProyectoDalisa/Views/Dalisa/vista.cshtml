@@ -1,0 +1,16 @@
+﻿@using ProyectoDalisa.Entity
+@{
+    ViewBag.Title = "vista";
+}
+
+@{
+    Usuario use = null;
+}
+
+<h2>Dashboard</h2>
+
+@if (Session["use"] != null)
+{
+    use = (Usuario)Session["use"];
+    < p > Bienvenido  @use.Nombre</ p >
+}
